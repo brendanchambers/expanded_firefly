@@ -1,0 +1,9 @@
+contents
+1. firefly_dynamics
+2. network_simulator_and_scorer
+
+UPDATING
+Decided not to keep a 'master' copy of firefly_dynamics/update_firefly_population
+                                nor network_simulator_and_scorer
+                              to keep customization easy
+ok to delete this pack
