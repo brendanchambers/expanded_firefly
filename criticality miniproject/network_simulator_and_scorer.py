@@ -40,8 +40,8 @@ class NetworkHelper:
         self.duration = eval(str(parsed[0]) + ' * ' + str(parsed[1])) # convert to physical units
         parsed = network_config['input_duration'].split(' ')
         self.input_duration = eval(parsed[0] + ' * ' + parsed[1])
-        parsed = network_config['input_rate'].split(' ')
-        self.input_rate = eval(parsed[0] + ' * ' + parsed[1])
+        #parsed = network_config['input_rate'].split(' ')
+        #self.input_rate = eval(parsed[0] + ' * ' + parsed[1])
 
         parsed = network_config['initial_Vm']
         print 'initial voltage distribution rule: ' + parsed

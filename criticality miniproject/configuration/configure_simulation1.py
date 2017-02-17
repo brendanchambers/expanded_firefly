@@ -8,14 +8,14 @@ config_prefix = '2-16-2017'  # for making the filestring - this should match the
 target_dir = '../simulations/2-16-2017/'
 
 ######## simulation parameters #############
-N_input = 800  # number of exc neurons getting input
+N_input = 400  # number of exc neurons getting input
 N_e = 3200
 N = 4000
 N_i = N - N_e  # inhibitory neurons
 
 duration = "0.3 second"  # total duration (format as a string as shown)
 input_duration = "0.3 second"  # inject some current (format as a string as shown) # todo this isn't getting used is it?
-input_rate = 4 * Hz  # Hz # todo code clean
+#input_rate = 4 * Hz  # Hz # todo code clean
 # input_current = 0 # nA
 
 initial_Vm = "(-60 + 10 * (numpy.random.rand(1, self.N) - 0.5)) * mV"  # this is going to get read in as a string in the networkHelper class
@@ -73,7 +73,7 @@ print eqs
 networkconfig_dict = {"N_input":N_input,"N_e":N_e,"N":N,"N_i":N_i,
 
           "duration":str(duration), "input_duration":str(input_duration),  # make these into strings so they
-          "input_rate":str(input_rate),"initial_Vm":str(initial_Vm),           #   can be serialized
+          "initial_Vm":str(initial_Vm),           #   can be serialized     # "input_rate":str(input_rate),
           "C":str(C),"gL":str(gL),"taum":str(taum),"EL":str(EL),"VT":str(VT),"DeltaT":str(DeltaT),
           "Vcut":str(Vcut),"we":str(we),"wi":str(wi), # "w_input":str(w_input),  #actively optimizing w_input now
            #"p_connect_input":p_connect_input,

@@ -6,7 +6,7 @@ from pprint import pprint
 
 ###### firefly config
 
-config_prefix = '2-16-2017' # for making the filestring
+config_prefix = 'huge 2-16-2017' # for making the filestring
 target_dir = '../simulations/2-16-2017/'
 
 verbose = 'compare weight distributions' # optionally provide a general description of the current endeavor
@@ -25,8 +25,8 @@ N_objectives = len(OBJECTIVES)
 #STDS = [0.1, 0.1, 0.1, 6] # ,3]
 #MAXES = [0.5, 0.5, 0.5, 12] # 13] # , 5]
 #MINS = [0.1, 0.1, 0.1, 6] # 3] # , -10]  # sigma must be > 0
-MINS = [0.33, 0.09, 0.15, 0.8, 0.32, 0.15]
-MAXES = [0.4, 0.22, 0.19, 1.5, 0.4, 0.24]
+MINS = [0.1, 0.1, 0.15, 0.9, 0.1, 0.1]
+MAXES = [0.5, 0.4, 0.35, 1.1, 0.5, 0.4]
     # example hand-tuned solution to search around during testing:
 #network_params = [0.3475, 0.1375, 0.1855, 1.5, 0.34, 0.165] # p_ei, p_ie, p_ii, w_input, p_inpi, p_iinp  # tau_e > tau_i
 
