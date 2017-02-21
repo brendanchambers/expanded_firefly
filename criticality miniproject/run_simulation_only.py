@@ -1,6 +1,6 @@
 import time
 
-from network_simulator_and_scorer import NetworkHelper
+from firefly_pack.network_simulator_and_scorer import NetworkHelper
 
 # switches:
 network_config_filename = 'simulations/2-16-2017/2-16-2017 networkconfig 1.json'

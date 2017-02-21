@@ -2,9 +2,9 @@ import json
 import time
 
 import numpy as np
-from firefly_dynamics_rescaled import firefly_dynamics_rescaled
 
-from network_simulator_and_scorer import NetworkHelper
+from firefly_pack.firefly_dynamics_rescaled import firefly_dynamics_rescaled
+from firefly_pack.network_simulator_and_scorer import NetworkHelper
 
 
 #@profile
@@ -12,7 +12,7 @@ def run_firefly1():
     dir = 'simulations/2-10-2017/'
     config_filestring = dir + '2-13-2017 config.json'
     networkconfig_filestring = dir + '2-13-2017 networkconfig 1.json'
-    inputcurrents_filestring = dir + 'input_currents 2-3-2017.json'
+    inputcurrents_filestring = dir + 'input_currents 2-16-2017.json'
     results_postfix = ' simulations 1.json'
 
 

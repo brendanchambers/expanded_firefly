@@ -2,9 +2,9 @@ import json
 import time
 
 import numpy as np
-from firefly_dynamics_CRIT import update_firefly_population
 
-from network_simulator_and_scorer import NetworkHelper
+from firefly_pack.network_simulator_and_scorer import NetworkHelper
+from firefly_pack.firefly_dynamics_rescaled import firefly_dynamics_rescaled # todo, want to rename 'update_firefly_population'
 
 
 #@profile
@@ -102,7 +102,7 @@ def run_firefly1():
             #scoreVectors[i_fly, 1] = rosenbrock_obj(population[:, i_fly]) # temp just use the same obj for both
 
 
-        result = update_firefly_population(population, scoreVectors, alpha, beta, absorption, characteristic_scales,  # todo could remove characteristic scales
+        result = firefly_dynamics_rescaled(population, scoreVectors, alpha, beta, absorption, characteristic_scales,  # todo could remove characteristic scales
                                                MAXES, MINS)
 
         newPopulation = result['newPopulation']

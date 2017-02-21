@@ -8,7 +8,7 @@ config_prefix = '2-13-2017'  # for making the filestring - this should match the
 target_dir = '../simulations/2-10-2017/'
 
 ######## simulation parameters #############
-N_input = 800  # number of exc neurons getting input
+N_input = 400  # number of exc neurons getting input
 N_e = 3200
 N = 4000
 N_i = N - N_e  # inhibitory neurons

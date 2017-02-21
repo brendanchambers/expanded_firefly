@@ -44,7 +44,7 @@ alpha = 0.075 # 0.035 # NOTE alpha gets scaled for each param in Firefly Dynamic
 beta = 6  # >4 yields chaotic firefly dynamics
 absorption = 0.6 # somewhere around 0.5 is good according to Yang
 
-annealing_constant = 0.99 # currently only beta is being annealed
+annealing_constant = 0.995 # currently only beta is being annealed
 
 ############# network config
 

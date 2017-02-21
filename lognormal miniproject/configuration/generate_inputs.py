@@ -7,24 +7,30 @@ from brian2.units.allunits import *
 from scipy import signal
 from tempfile import TemporaryFile
 
+
+# NOTE this is currently parameterized by
+# uniform distribution of poisson firing rates
+# 0.2 p_connect from poisson to exc
+# and some uniform jitter in the connection weight
+
 # goal for the inputs - let's do something that looks more like these: http://science.sciencemag.org/content/312/5780/1622.full
 
 target_dir = '../simulations/2-10-2017/'
-save_postfix = "input_currents 2-3-2017.json"
+save_postfix = "input_currents 2-13-2017.json"
 save_name = target_dir + save_postfix
 
 # design parameters
 N_input = 200 # number of poisson thalamic inputs
 inputMean = 10*Hz # hz # for the Poisson rates
-inputStd = 5*Hz  # todo find measurements of population thalamic firing rates
-my_rates = np.random.randn(N_input) * inputStd + inputMean
-tau_input = 10 # ms # todo it would be cool to use a depressing burst
+my_rates = np.random.uniform(0,inputMean/Hz * 2,N_input) * Hz # draw a uniform bag of firing rates, idealizing stimululs tuning
+tau_input = 3 # ms # todo it would be nice to use a depressing burst
 
-w_poisson_out = 150 # scaling to get the conductances into the biologically plausible range
+w_poisson_out = 500 # scaling to get the conductances into the biologically plausible range
+        # nS
 
 DURATION = 50*ms
 T_RES = 0.1*ms
-N_targets = 800 # WARNING this has to batched by hand to N_inputs in the network config files (todo fix this issue)
+N_targets = 400 # WARNING this has to batched by hand to N_inputs in the network config files (todo fix this issue)
 p_target_receives_input = 0.15 # todo what level of input correlation does this induce (probably too much)
 
 # init
@@ -37,7 +43,7 @@ active_recipients = np.arange(N_targets)
 for i_input in range(N_input):
     for i_target in active_recipients:
         if input_connectivity[i_input][i_target] < p_target_receives_input:
-            input_connectivity[i_input][i_target] = 8+np.random.randn()*2 # 4 mean +/- 2 std on input weights # todo think about this todo no negative weights
+            input_connectivity[i_input][i_target] = 1 + 0.2*np.random.rand() # a little bit of heterogeneity # todo think about this todo no negative weights
         else:
             input_connectivity[i_input][i_target] = 0
 
@@ -82,22 +88,13 @@ plt.plot(exp_kernel)
 title('filtering kernel for input currents')
 plt.show()
 
+                            # = N_poisson, N_targets.T   **   N_poisson, T
+input_current_components = w_poisson_out * filt.convolve1d(input_current_components, exp_kernel, axis=1) # oops, this probably wasn't matrix multiplication
 
-input_current_components = w_poisson_out * filt.convolve1d(input_current_components, exp_kernel, axis=1)
-
-# implement the dynamics
-#input_connectivity =# (N_input x N_targets)
-
-#
 for i_target in range(N_targets): # row in input cells
     for i_source in range(N_input):
         if input_connectivity[i_source][i_target] > 0:
-            input_conductances[i_target][:] += input_current_components[i_source][:]
-
-# some arbitrary scaling todo figure this out
-input_conductances *= 1
-# todo get these in the right range for nS - check recurrent inputs for scale sanity check
-
+            input_conductances[i_target][:] += input_current_components[i_source][:] * input_connectivity[i_source][i_target] # scale by the connectio weight
 
 
 # plot
@@ -132,7 +129,7 @@ plt.show()
 savefile = open(save_name,'w')
 save_object = {"input_conductances":input_conductances.tolist(), "dt": T_RES / ms, #  "target_fraction":target_fraction,
                             "p_target_receives_input":p_target_receives_input,
-                            "inputMean":inputMean/Hz, "inputStd":inputStd/Hz, "tau_input":tau_input,
+                            "inputMean":inputMean/Hz,  "tau_input":tau_input, # "inputStd":inputStd/Hz,
                             "N_targets":N_targets,"w_poisson":w_poisson_out}
 json.dump(save_object,savefile,sort_keys=True,indent=2)
 

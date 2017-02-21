@@ -1,10 +1,9 @@
-import json
-
 import matplotlib as mpl
 import matplotlib.cm as cm
 import matplotlib.pyplot as plt
 import numpy as np
-from network_simulator_and_scorer import NetworkHelper
+
+from firefly_pack.plot_firefly_fun import plot_firefly_fun
 
 #results_filestring = 'firefly cleanup 12-6-2016 simulations.json'
 #networkconfig_filestring = 'firefly cleanup 12-6-2016 networkconfig.json'
@@ -13,8 +12,15 @@ from network_simulator_and_scorer import NetworkHelper
 dir = 'simulations/2-10-2017/'
 config_filestring = dir + '2-13-2017 config.json'
 networkconfig_filestring = dir + '2-13-2017 networkconfig 3.json'
-inputcurrents_filestring = dir + 'input_currents 2-3-2017.json'
+inputcurrents_filestring = dir + 'input_currents 2-16-2017.json'
 results_filestring = dir + '2-13-2017 simulations 3.json'
+
+plot_firefly_fun(dir,config_filestring,
+                 networkconfig_filestring,
+                 inputcurrents_filestring,
+                 results_filestring)
+
+'''
 
 verboseplot = True
 simulatewinner = True
@@ -383,9 +389,11 @@ for i_objective in range(0, N_objectives):
         #plt.setp([a.get_yticklabels() for a in axarr[:, 1]], visible=False)
 '''
 ######################## map of the solution space: ...
+'''
 dimx = 0
 dimy = 1
 
+N_objectives =
 for i_obj in range(0,N_objectives):
 
     MIN = np.nanmedian(paretoScores[i_objective][~np.isnan(paretoScores[i_objective])])   # chop off some of the range so the plot is easier to read
@@ -415,7 +423,7 @@ for i_obj in range(0,N_objectives):
     plt.show()
 
 '''
-
+'''
 ###################### plot score trajectories
 plt.figure()
 for i_dim in range(0,N_objectives):
@@ -448,3 +456,4 @@ if simulatewinner:
         print 'second trial = '
         network_helper.simulateActivity(fireflyHistory[ int(bugIdxs[i_obj]) ][ int(genIdxs[i_obj]) ]['params'], verboseplot=True)
 
+'''
