@@ -9,10 +9,10 @@ from firefly_pack.network_simulator_and_scorer import NetworkHelper
 
 #@profile
 def run_firefly1():
-    dir = 'simulations/2-21-2017/'
-    config_filestring = dir + '2-13-2017 config.json'
-    networkconfig_filestring = dir + '2-13-2017 networkconfig 1.json'
-    inputcurrents_filestring = dir + 'input_currents 2-13-2017.json'
+    dir = 'simulations/2-27-2017/'
+    config_filestring = dir + '2-27-2017 40x90  config.json'
+    networkconfig_filestring = dir + '2-27-2017 40x90  networkconfig 1.json'
+    inputcurrents_filestring = dir + '2-27-2017 inputs.json'
     results_postfix = ' simulations 1.json'
 
 
@@ -94,8 +94,6 @@ def run_firefly1():
         # handle meta-heuristics (right now we are just annealing beta)
         beta *= annealing_constant
         alpha *= annealing_constant # let's anneal alpha too
-        #print "annealing constant: " + str(annealing_constant)
-        #print "beta updated: " + str(beta)
 
         for i_fly in range(0, N_bugs): # old note: better to enumerate the firebugs directly
             scoreVectors[i_fly,:] = network_helper.simulateActivity(population[:,i_fly],verboseplot=False)

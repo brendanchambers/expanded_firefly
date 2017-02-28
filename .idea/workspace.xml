@@ -2,23 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8967e92c-2082-42db-98b4-c9bb1ee799b5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/1 - a fly history.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/1 - fly param history.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/1 - score history.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/1 - winner activity.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/1 score cuts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/2-13-2017 config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/2-13-2017 networkconfig 1.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/2-13-2017 networkconfig 2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/2-13-2017 networkconfig 3.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/2-13-2017 simulations 1.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/2-13-2017 simulations 2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/2-13-2017 simulations 3.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/2-13-2017 xL config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/2-13-2017 xL simulations 1.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/2-13-2017 xL simulations 2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/2-13-2017 xL simulations 3.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/input_currents 2-13-2017.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compare search range miniproject/plot_firefly1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compare search range miniproject/plot_firefly2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compare search range miniproject/plot_firefly3.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compare search range miniproject/run_firefly2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compare search range miniproject/run_firefly3.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compare search range miniproject/simulations/2-16-2017/huge 2-16-2017 config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compare search range miniproject/simulations/2-16-2017/medium 2-16-2017 config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compare search range miniproject/simulations/2-16-2017/small 2-16-2017 config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/firefly_pack/firefly_dynamics_rescaled.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/firefly_pack/network_simulator_and_scorer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/firefly_pack/plot_firefly_fun.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-27-2017/2-27-2017 40x90  config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-27-2017/2-27-2017 40x90  simulations 1.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-10-2017/1-18-2016 config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-10-2017/1-18-2016 networkconfig 1.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-10-2017/1-18-2016 networkconfig input test.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-10-2017/1-18-2016 results 1.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-10-2017/input_currents 2-3-2017.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-9-2017 ok to delete/1-18-2016 config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-9-2017 ok to delete/1-18-2016 networkconfig 1.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-9-2017 ok to delete/1-18-2016 networkconfig 2.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-9-2017 ok to delete/1-18-2016 networkconfig input test.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-9-2017 ok to delete/1-18-2016 results 1.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-9-2017 ok to delete/1-18-2016 results 2.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-9-2017 ok to delete/input_currents 2-3-2017.json" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/criticality miniproject/configuration/configure_firefly.py" afterPath="$PROJECT_DIR$/compare search range miniproject/configuration/configure_firefly.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/criticality miniproject/configuration/configure_simulation1.py" afterPath="$PROJECT_DIR$/compare search range miniproject/configuration/configure_simulation1.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/criticality miniproject/configuration/generate_inputs.py" afterPath="$PROJECT_DIR$/compare search range miniproject/configuration/generate_inputs.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/criticality miniproject/configuration/sandbox.py" afterPath="$PROJECT_DIR$/compare search range miniproject/configuration/sandbox.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/criticality miniproject/run_firefly1.py" afterPath="$PROJECT_DIR$/compare search range miniproject/run_firefly1.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/criticality miniproject/run_simulation_only.py" afterPath="$PROJECT_DIR$/compare search range miniproject/run_simulation_only.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/criticality miniproject/simulations/2-16-2017/2-16-2017 config.json" afterPath="$PROJECT_DIR$/compare search range miniproject/simulations/2-16-2017/2-16-2017 config.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/criticality miniproject/simulations/2-16-2017/2-16-2017 networkconfig 1.json" afterPath="$PROJECT_DIR$/compare search range miniproject/simulations/2-16-2017/2-16-2017 networkconfig 1.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/criticality miniproject/simulations/2-16-2017/2-16-2017 simulations 1.json" afterPath="$PROJECT_DIR$/compare search range miniproject/simulations/2-16-2017/2-16-2017 simulations 1.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/criticality miniproject/simulations/2-16-2017/input_currents 2-16-2017.json" afterPath="$PROJECT_DIR$/compare search range miniproject/simulations/2-16-2017/input_currents 2-16-2017.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-10-2017/2-13-2017 config.json" afterPath="$PROJECT_DIR$/compare search range miniproject/simulations/2-21-2017/huge 2-16-2017 config.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-10-2017/2-13-2017 networkconfig 1.json" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-27-2017/2-27-2017 40x90  networkconfig 2.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-10-2017/2-13-2017 networkconfig 2.json" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-27-2017/2-27-2017 40x90  networkconfig 1.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-10-2017/2-13-2017 networkconfig 3.json" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-27-2017/2-27-2017 40x90  networkconfig 3.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-10-2017/2-13-2017 simulations 1.json" afterPath="$PROJECT_DIR$/compare search range miniproject/simulations/2-16-2017/huge 2-16-2017 simulations 3.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-10-2017/2-13-2017 simulations 2.json" afterPath="$PROJECT_DIR$/compare search range miniproject/simulations/2-16-2017/medium 2-16-2017 simulations 2.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-10-2017/2-13-2017 simulations 3.json" afterPath="$PROJECT_DIR$/compare search range miniproject/simulations/2-16-2017/small 2-16-2017 simulations 1.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lognormal miniproject/simulations/2-10-2017/input_currents 2-16-2017.json" afterPath="$PROJECT_DIR$/lognormal miniproject/simulations/2-27-2017/2-27-2017 inputs.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/firefly_pack/note.txt" afterPath="$PROJECT_DIR$/firefly_pack/note.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lognormal miniproject/configuration/configure_firefly.py" afterPath="$PROJECT_DIR$/lognormal miniproject/configuration/configure_firefly.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation1.py" afterPath="$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation2.py" afterPath="$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation3.py" afterPath="$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation3.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lognormal miniproject/configuration/generate_inputs.py" afterPath="$PROJECT_DIR$/lognormal miniproject/configuration/generate_inputs.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lognormal miniproject/run_firefly1.py" afterPath="$PROJECT_DIR$/lognormal miniproject/run_firefly1.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,71 +87,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plot_firefly6.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lognormal miniproject/plot_firefly6.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plot_firefly1.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lognormal miniproject/plot_firefly1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="configure_firefly.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lognormal miniproject/configuration/configure_firefly.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run_firefly5.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lognormal miniproject/run_firefly5.py">
+      <file leaf-file-name="network_simulator_and_scorer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/firefly_pack/network_simulator_and_scorer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+            <state relative-caret-position="167">
+              <caret line="523" column="49" lean-forward="true" selection-start-line="523" selection-start-column="49" selection-end-line="523" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run_firefly6.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lognormal miniproject/run_firefly6.py">
+      <file leaf-file-name="run_firefly1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lognormal miniproject/run_firefly1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="99" column="112" lean-forward="true" selection-start-line="99" selection-start-column="112" selection-end-line="99" selection-end-column="112" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plot_firefly4.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lognormal miniproject/plot_firefly4.py">
+      <file leaf-file-name="configure_simulation2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="generate_inputs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lognormal miniproject/configuration/generate_inputs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-27">
-              <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            <state relative-caret-position="136">
+              <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -177,7 +181,6 @@
         <option value="$PROJECT_DIR$/lognormal miniproject/run_simulation.py" />
         <option value="$PROJECT_DIR$/lognormal miniproject/network_simulator_and_scorer.py" />
         <option value="$PROJECT_DIR$/criticality miniproject/firefly_dynamics_CRIT.py" />
-        <option value="$PROJECT_DIR$/firefly_pack/note.txt" />
         <option value="$PROJECT_DIR$/criticality miniproject/configuration/sandbox.py" />
         <option value="$PROJECT_DIR$/criticality miniproject/configuration/generate_inputs.py" />
         <option value="$PROJECT_DIR$/criticality miniproject/run_simulation_only.py" />
@@ -195,10 +198,6 @@
         <option value="$PROJECT_DIR$/criticality miniproject/plot_firefly1.py" />
         <option value="$PROJECT_DIR$/criticality miniproject/configuration/configure_firefly.py" />
         <option value="$PROJECT_DIR$/lognormal miniproject/run_simulation_only.py" />
-        <option value="$PROJECT_DIR$/lognormal miniproject/configuration/generate_inputs.py" />
-        <option value="$PROJECT_DIR$/lognormal miniproject/run_firefly1.py" />
-        <option value="$PROJECT_DIR$/firefly_pack/network_simulator_and_scorer.py" />
-        <option value="$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation1.py" />
         <option value="$PROJECT_DIR$/firefly_pack/plot_firefly_fun.py" />
         <option value="$PROJECT_DIR$/lognormal miniproject/run_firefly4.py" />
         <option value="$PROJECT_DIR$/lognormal miniproject/run_firefly5.py" />
@@ -208,11 +207,16 @@
         <option value="$PROJECT_DIR$/lognormal miniproject/plot_firefly2.py" />
         <option value="$PROJECT_DIR$/lognormal miniproject/plot_firefly1.py" />
         <option value="$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/2-13-2017 simulations 1.json" />
-        <option value="$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation2.py" />
-        <option value="$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation3.py" />
         <option value="$PROJECT_DIR$/lognormal miniproject/plot_firefly6.py" />
         <option value="$PROJECT_DIR$/lognormal miniproject/plot_firefly5.py" />
+        <option value="$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation1.py" />
+        <option value="$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation2.py" />
+        <option value="$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation3.py" />
+        <option value="$PROJECT_DIR$/lognormal miniproject/configuration/generate_inputs.py" />
         <option value="$PROJECT_DIR$/lognormal miniproject/configuration/configure_firefly.py" />
+        <option value="$PROJECT_DIR$/firefly_pack/network_simulator_and_scorer.py" />
+        <option value="$PROJECT_DIR$/lognormal miniproject/run_firefly1.py" />
+        <option value="$PROJECT_DIR$/firefly_pack/note.txt" />
       </list>
     </option>
   </component>
@@ -259,155 +263,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lognormal miniproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="firefly 2-10-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="firefly 2-10-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lognormal miniproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simulations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="firefly 2-10-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="firefly 2-10-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lognormal miniproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simulations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2-21-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="firefly 2-10-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="firefly 2-10-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lognormal miniproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="configuration" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="firefly 2-10-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="firefly 2-10-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="firefly_pack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="firefly 2-10-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="firefly 2-10-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="criticality miniproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="firefly 2-10-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="firefly 2-10-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="criticality miniproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simulations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2-21-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="firefly 2-10-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="firefly 2-10-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="criticality miniproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simulations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="2-16-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="firefly 2-10-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="firefly 2-10-2017" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="criticality miniproject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="configuration" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -437,41 +293,7 @@
       <recent name="C:\Users\maclean lab\PycharmProjects\firefly 2-10-2017\lognormal miniproject\firefly_tools" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.plot_firefly1">
-    <configuration default="false" name="plot_firefly3" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lognormal miniproject" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="firefly 2-10-2017" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lognormal miniproject/plot_firefly3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="plot_firefly6" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lognormal miniproject" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="firefly 2-10-2017" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lognormal miniproject/plot_firefly6.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.run_firefly1">
     <configuration default="false" name="configure_firefly" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -489,24 +311,58 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="plot_firefly4" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="configure_simulation2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lognormal miniproject" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lognormal miniproject/configuration" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="firefly 2-10-2017" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lognormal miniproject/plot_firefly4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="plot_firefly1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="configure_simulation3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lognormal miniproject/configuration" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="firefly 2-10-2017" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="generate_inputs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lognormal miniproject/configuration" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="firefly 2-10-2017" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lognormal miniproject/configuration/generate_inputs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="run_firefly1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -518,7 +374,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="firefly 2-10-2017" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lognormal miniproject/plot_firefly1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lognormal miniproject/run_firefly1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -658,19 +514,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.plot_firefly3" />
-      <item index="1" class="java.lang.String" itemvalue="Python.plot_firefly6" />
-      <item index="2" class="java.lang.String" itemvalue="Python.configure_firefly" />
-      <item index="3" class="java.lang.String" itemvalue="Python.plot_firefly4" />
-      <item index="4" class="java.lang.String" itemvalue="Python.plot_firefly1" />
+      <item index="0" class="java.lang.String" itemvalue="Python.configure_firefly" />
+      <item index="1" class="java.lang.String" itemvalue="Python.configure_simulation2" />
+      <item index="2" class="java.lang.String" itemvalue="Python.configure_simulation3" />
+      <item index="3" class="java.lang.String" itemvalue="Python.generate_inputs" />
+      <item index="4" class="java.lang.String" itemvalue="Python.run_firefly1" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.plot_firefly1" />
-        <item index="1" class="java.lang.String" itemvalue="Python.plot_firefly4" />
-        <item index="2" class="java.lang.String" itemvalue="Python.plot_firefly6" />
-        <item index="3" class="java.lang.String" itemvalue="Python.configure_firefly" />
-        <item index="4" class="java.lang.String" itemvalue="Python.plot_firefly3" />
+        <item index="0" class="java.lang.String" itemvalue="Python.run_firefly1" />
+        <item index="1" class="java.lang.String" itemvalue="Python.configure_firefly" />
+        <item index="2" class="java.lang.String" itemvalue="Python.generate_inputs" />
+        <item index="3" class="java.lang.String" itemvalue="Python.configure_simulation3" />
+        <item index="4" class="java.lang.String" itemvalue="Python.configure_simulation2" />
       </list>
     </recent_temporary>
   </component>
@@ -689,9 +545,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21018277" sideWeight="0.5025" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -717,7 +573,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/criticality miniproject/run_firefly2.py</url>
+          <url>file://$PROJECT_DIR$/compare search range miniproject/run_firefly2.py</url>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -733,14 +589,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/firefly_pack/note.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/criticality miniproject/configuration/sandbox.py">
+    <entry file="file://$PROJECT_DIR$/compare search range miniproject/configuration/sandbox.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
@@ -754,7 +603,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/criticality miniproject/configuration/configure_simulation1.py">
+    <entry file="file://$PROJECT_DIR$/compare search range miniproject/configuration/configure_simulation1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
@@ -782,7 +631,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/criticality miniproject/run_firefly3.py">
+    <entry file="file://$PROJECT_DIR$/compare search range miniproject/run_firefly3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="104" column="43" lean-forward="false" selection-start-line="104" selection-start-column="43" selection-end-line="104" selection-end-column="43" />
@@ -803,7 +652,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/criticality miniproject/run_firefly2.py">
+    <entry file="file://$PROJECT_DIR$/compare search range miniproject/run_firefly2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1768">
           <caret line="104" column="42" lean-forward="false" selection-start-line="104" selection-start-column="42" selection-end-line="104" selection-end-column="42" />
@@ -817,10 +666,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="119" column="76" lean-forward="true" selection-start-line="119" selection-start-column="76" selection-end-line="119" selection-end-column="76" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/criticality miniproject/plot_firefly2.py">
+    <entry file="file://$PROJECT_DIR$/compare search range miniproject/plot_firefly2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="71" column="32" lean-forward="false" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="32" />
@@ -828,14 +678,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/criticality miniproject/simulations/2-16-2017/2-16-2017 networkconfig 1.json">
+    <entry file="file://$PROJECT_DIR$/compare search range miniproject/simulations/2-16-2017/2-16-2017 networkconfig 1.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/criticality miniproject/run_simulation_only.py">
+    <entry file="file://$PROJECT_DIR$/compare search range miniproject/run_simulation_only.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="80" lean-forward="false" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="80" />
@@ -843,7 +693,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/criticality miniproject/configuration/generate_inputs.py">
+    <entry file="file://$PROJECT_DIR$/compare search range miniproject/configuration/generate_inputs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
@@ -851,15 +701,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/firefly_pack/network_simulator_and_scorer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="185" column="0" lean-forward="true" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/criticality miniproject/configuration/configure_firefly.py">
+    <entry file="file://$PROJECT_DIR$/compare search range miniproject/configuration/configure_firefly.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="65" column="40" lean-forward="false" selection-start-line="65" selection-start-column="40" selection-end-line="65" selection-end-column="40" />
@@ -867,7 +709,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/criticality miniproject/simulations/2-16-2017/medium 2-16-2017 config.json">
+    <entry file="file://$PROJECT_DIR$/compare search range miniproject/simulations/2-16-2017/medium 2-16-2017 config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -875,7 +717,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/criticality miniproject/simulations/2-16-2017/huge 2-16-2017 config.json">
+    <entry file="file://$PROJECT_DIR$/compare search range miniproject/simulations/2-16-2017/huge 2-16-2017 config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -883,7 +725,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/criticality miniproject/plot_firefly3.py">
+    <entry file="file://$PROJECT_DIR$/compare search range miniproject/plot_firefly3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
@@ -941,22 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/2-13-2017 config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -969,14 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -997,22 +815,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lognormal miniproject/run_firefly1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="43" lean-forward="true" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lognormal miniproject/run_firefly2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="57" lean-forward="false" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lognormal miniproject/run_firefly3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1021,7 +823,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/criticality miniproject/run_firefly1.py">
+    <entry file="file://$PROJECT_DIR$/compare search range miniproject/run_firefly1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1496">
           <caret line="94" column="34" lean-forward="true" selection-start-line="94" selection-start-column="34" selection-end-line="94" selection-end-column="34" />
@@ -1029,18 +831,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/criticality miniproject/plot_firefly1.py">
+    <entry file="file://$PROJECT_DIR$/compare search range miniproject/plot_firefly1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lognormal miniproject/run_firefly4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1069,42 +863,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lognormal miniproject/plot_firefly4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lognormal miniproject/configuration/generate_inputs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lognormal miniproject/run_simulation_only.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="25" column="68" lean-forward="false" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lognormal miniproject/simulations/2-21-2017/2-13-2017 xL config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lognormal miniproject/configuration/configure_firefly.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1117,10 +879,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lognormal miniproject/run_firefly4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lognormal miniproject/run_simulation_only.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="25" column="68" lean-forward="false" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lognormal miniproject/configuration/generate_inputs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lognormal miniproject/plot_firefly1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="18" lean-forward="true" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        <state relative-caret-position="272">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lognormal miniproject/plot_firefly4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lognormal miniproject/configuration/configure_firefly.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1649">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firefly_pack/network_simulator_and_scorer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="523" column="49" lean-forward="true" selection-start-line="523" selection-start-column="49" selection-end-line="523" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lognormal miniproject/configuration/configure_simulation2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lognormal miniproject/run_firefly2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firefly_pack/note.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lognormal miniproject/run_firefly1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="99" column="112" lean-forward="true" selection-start-line="99" selection-start-column="112" selection-end-line="99" selection-end-column="112" />
           <folding />
         </state>
       </provider>

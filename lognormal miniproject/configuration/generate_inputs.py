@@ -15,8 +15,8 @@ from tempfile import TemporaryFile
 
 # goal for the inputs - let's do something that looks more like these: http://science.sciencemag.org/content/312/5780/1622.full
 
-target_dir = '../simulations/2-21-2017/'
-save_postfix = "input_currents 2-13-2017.json"
+target_dir = '../simulations/2-27-2017/'
+save_postfix = "2-27-2017 inputs.json"
 save_name = target_dir + save_postfix
 
 # design parameters

@@ -1,9 +1,13 @@
 contents
 1. firefly_dynamics
 2. network_simulator_and_scorer
+3. plotting helper function
 
 UPDATING
 Decided not to keep a 'master' copy of firefly_dynamics/update_firefly_population
                                 nor network_simulator_and_scorer
                               to keep customization easy
-ok to delete this pack
+
+UPDATING
+No master shared copy but currently a shared copy across the lognormal and search-range project directories
+Going to need different versions for the clustering and criticality projects though

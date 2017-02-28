@@ -6,16 +6,18 @@ from pprint import pprint
 
 ###### firefly config
 
-config_prefix = '2-13-2017 xL' # for making the filestring
-target_dir = '../simulations/2-21-2017/'
+config_prefix = '2-27-2017 40x90 ' # for making the filestring
+target_dir = '../simulations/2-27-2017/'
 
 verbose = 'compare weight distributions' # optionally provide a general description of the current endeavor
 PARAMS = ['p_ei','p_ie','p_ii','w_input','p_inpi','p_iinp'] # ,'lognorm_sigma'] # name for easier printing
 #OBJECTIVES = ['stable duration','rate_score','asynchrony_score'] # '['asynchrony','stable duration'] # names for easier printing & reference
-OBJECTIVES = ['rate_score']
+#OBJECTIVES = ['rate_score']
+OBJECTIVES = ['rate_score','asynchrony_score']
+
                     # (for now the second obj dimension is not necessary)
 
-N_gen = 40  # working towards 100+
+N_gen = 3  # working towards 100+
 N_bugs = 90
 N_params = len(PARAMS)
 N_objectives = len(OBJECTIVES)

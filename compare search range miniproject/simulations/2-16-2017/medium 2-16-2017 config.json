@@ -1,0 +1,48 @@
+{
+  "MAXES": [
+    0.41, 
+    0.21, 
+    0.29, 
+    1.1, 
+    0.42, 
+    0.25
+  ], 
+  "MINS": [
+    0.38, 
+    0.15, 
+    0.28, 
+    0.9, 
+    0.33, 
+    0.2
+  ], 
+  "N_bugs": 30, 
+  "N_gen": 150, 
+  "N_objectives": 1, 
+  "N_params": 6, 
+  "OBJECTIVES": [
+    "rate_score"
+  ], 
+  "PARAMS": [
+    "p_ei", 
+    "p_ie", 
+    "p_ii", 
+    "w_input", 
+    "p_inpi", 
+    "p_iinp"
+  ], 
+  "absorption": 0.6, 
+  "alpha": 0.075, 
+  "annealing_constant": 0.99, 
+  "beta": 6, 
+  "characteristic_scales": [
+    0.02999999999999997, 
+    0.06, 
+    0.009999999999999953, 
+    0.20000000000000007, 
+    0.08999999999999997, 
+    0.04999999999999999
+  ], 
+  "config_prefix": "medium 2-16-2017", 
+  "target_dir": "../simulations/2-16-2017/", 
+  "verbose": "compare weight distributions"
+}

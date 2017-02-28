@@ -4,8 +4,8 @@ import json
 # todo test this
 
 
-config_prefix = '2-13-2017'  # for making the filestring - this should match the firefly config (todo make this automatic)
-target_dir = '../simulations/2-21-2017/'
+config_prefix = '2-27-2017 40x90 '  # for making the filestring - this should match the firefly config (todo make this automatic)
+target_dir = '../simulations/2-27-2017/'
 
 ######## simulation parameters #############
 N_input = 400  # number of exc neurons getting input
