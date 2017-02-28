@@ -9,10 +9,10 @@ from firefly_pack.network_simulator_and_scorer import NetworkHelper
 
 #@profile
 def run_firefly1():
-    dir = 'simulations/2-10-2017/'
+    dir = 'simulations/2-21-2017/'
     config_filestring = dir + '2-13-2017 config.json'
     networkconfig_filestring = dir + '2-13-2017 networkconfig 3.json'
-    inputcurrents_filestring = dir + 'input_currents 2-16-2017.json'
+    inputcurrents_filestring = dir + 'input_currents 2-13-2017.json'
     results_postfix = ' simulations 3.json'
 
 

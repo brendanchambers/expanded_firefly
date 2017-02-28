@@ -7,7 +7,7 @@ from pprint import pprint
 ###### firefly config
 
 config_prefix = 'huge 2-16-2017' # for making the filestring
-target_dir = '../simulations/2-16-2017/'
+target_dir = '../simulations/2-21-2017/'
 
 verbose = 'compare weight distributions' # optionally provide a general description of the current endeavor
 PARAMS = ['p_ei','p_ie','p_ii','w_input','p_inpi','p_iinp'] # ,'lognorm_sigma'] # name for easier printing
@@ -19,6 +19,7 @@ N_gen = 150  # working towards 100+
 N_bugs = 30
 N_params = len(PARAMS)
 N_objectives = len(OBJECTIVES)
+#N_repetitions = 3 # repeat each simulation N_rep times to get a better estimate of obj score
 
 # range for [p_ei, p_ie, p_ii, w_input]
 #MEANS = [0.15, 0.15, 0.2, 10] # ,-1] # for each param  # WARNING trying a uniform distribution instead
@@ -69,6 +70,7 @@ annealing_constant = 0.995 # currently only beta is being annealed
 
 # repackage the config constants into a dictionary
 config_dict = {"N_gen":N_gen,"N_bugs":N_bugs,"N_params":N_params,"N_objectives":N_objectives,
+               #"N_repetitions":N_repetitions,
                #"MEANS":MEANS,"STDS":STDS,
                "MAXES":MAXES,"MINS":MINS,"characteristic_scales": characteristic_scales.tolist(),
                "alpha":alpha,"beta":beta,"absorption":absorption,"annealing_constant":annealing_constant,
