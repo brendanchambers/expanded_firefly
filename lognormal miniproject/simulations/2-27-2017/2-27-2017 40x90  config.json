@@ -16,7 +16,7 @@
     0.1
   ], 
   "N_bugs": 90, 
-  "N_gen": 3, 
+  "N_gen": 40, 
   "N_objectives": 2, 
   "N_params": 6, 
   "OBJECTIVES": [

@@ -4,8 +4,8 @@ import json
 # todo test this
 
 
-config_prefix = '2-27-2017 40x90 '  # for making the filestring - this should match the firefly config (todo make this automatic)
-target_dir = '../simulations/2-27-2017/'
+config_prefix = '2-28-2017 20x150 '  # for making the filestring - this should match the firefly config (todo make this automatic)
+target_dir = '../simulations/2-28-2017/'
 
 ######## simulation parameters #############
 N_input = 400  # number of exc neurons getting input
@@ -42,7 +42,7 @@ p_connect_ee = 0.2  # connection probabilities
 #p_connect_iinh # adding these
 #p_connect_inhi
 
-logrand_sigma = 0.1  # would be interesting at some point to leave these out and examine this continuum computationally
+logrand_sigma = 1.5  # would be interesting at some point to leave these out and examine this continuum computationally
 logrand_mu = log(1) - 0.5 * (logrand_sigma ** 2)  # this condition ensures that the mean of the new distributoin = 1
 
 LOG_RAND_sigmaInh = 0.1  # suggesting we hold these constant and only vary excitatory connections

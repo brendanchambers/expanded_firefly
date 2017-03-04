@@ -367,8 +367,8 @@ def plot_firefly_fun(dir, config_filestring,networkconfig_filestring, inputcurre
             ytick_res = (maxy - miny) / 100
             K_bins_x = (maxx - minx) / xtick_res + 1   #(todo revise for non-square ranges) (add one b/c upper limit of range
             K_bins_y = (maxy - miny) / ytick_res + 1
-            sigma_filter_x = 2.0*xtick_res # param units for the gaussian convolution
-            sigma_filter_y = 2.0*ytick_res
+            sigma_filter_x = 3.0*xtick_res # param units for the gaussian convolution
+            sigma_filter_y = 3.0*ytick_res
             sigma_filter_bins = [sigma_filter_x / xtick_res, sigma_filter_y / ytick_res] # translate to units of bin size
 
 
@@ -538,8 +538,8 @@ def plot_firefly_fun(dir, config_filestring,networkconfig_filestring, inputcurre
                         ytick_res = (maxy - miny) / 100
                         K_bins_x = (maxx - minx) / xtick_res + 2  # (todo revise for non-square ranges) (add one b/c upper limit of range just in case, 'i dunno
                         K_bins_y = (maxy - miny) / ytick_res + 2
-                        sigma_filter_x = 2.0*xtick_res  # param units for the gaussian convolution
-                        sigma_filter_y = 2.0*ytick_res
+                        sigma_filter_x = 3.0*xtick_res  # param units for the gaussian convolution
+                        sigma_filter_y = 3.0*ytick_res
                         sigma_filter_bins = [sigma_filter_x / xtick_res,
                                              sigma_filter_y / ytick_res]  # translate to units of bin size
 

@@ -481,14 +481,15 @@ class NetworkHelper:
         #####################  compute corr coeffs of rates  # todo do this better
         if do_score_asynchrony:
             CORR_COEFF_SAMPLE = 200 # how many neurons should we compute corr coeffs for?
-            BINS_SAMPLE = 100
+            BINS_SAMPLE = 25
             if numActiveNeurons < CORR_COEFF_SAMPLE:  # impose min number of active neurons
-                asynchrony_score = -np.inf # no meaningful definition for null trials
+                asynchrony_score = -1 # no meaningful definition for null trials
             elif numStableBins < BINS_SAMPLE:
-                asynchrony_score = -np.inf   # impose min number of stable bins
+                asynchrony_score = -1   # impose min number of stable bins
             else:
                 #corrcoeffs = np.corrcoef(raster[0:self.N_e][stablePeriodBegin:stablePeriodEnd])  # look at excitatory cells only
-                sampleIdxs = np.argpartition(avgRates,-CORR_COEFF_SAMPLE)[-CORR_COEFF_SAMPLE:] # K highest rates from high to low
+                sampleIdxs = numpy.random.randint(0, self.N_e - self.N_input, CORR_COEFF_SAMPLE) # np.argpartition(avgRates,-CORR_COEFF_SAMPLE)[-CORR_COEFF_SAMPLE:] # K highest rates from high to low
+                #sampleIdxs = sampleIdxs + self.N_input  # avgRates do not include the input neurons - this accounts for that offset
                 corrcoeffs = np.corrcoef(raster_smooth[sampleIdxs][:]) # corr coeffs among sample neurons
                 if len(corrcoeffs) > 1:
                     np.fill_diagonal(corrcoeffs, np.nan) # mask out the self-self comparisons (replace with nans)
