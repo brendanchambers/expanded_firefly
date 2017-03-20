@@ -7,7 +7,7 @@ from pprint import pprint
 ###### firefly config
 
 config_prefix = '2-28-2017 80x60 ' # for making the filestring
-target_dir = '../simulations/2-28-2017/'
+target_dir = '../simulations/3-2-2017/'
 
 verbose = 'compare weight distributions' # optionally provide a general description of the current endeavor
 PARAMS = ['p_ei','p_ie','p_ii','w_input','p_inpi','p_iinp'] # ,'lognorm_sigma'] # name for easier printing
@@ -42,7 +42,7 @@ alpha = 0.075 # 0.035 # NOTE alpha gets scaled for each param in Firefly Dynamic
 beta = 6  # >4 yields chaotic firefly dynamics
 absorption = 0.6 # somewhere around 0.5 is good according to Yang
 
-annealing_constant = 0.98 # currently only beta is being annealed
+annealing_constant = 1 # 0.98 # currently only beta is being annealed
 
 ############# network config
 

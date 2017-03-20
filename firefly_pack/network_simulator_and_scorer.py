@@ -303,11 +303,11 @@ class NetworkHelper:
         # neurons.I = input_current * nA # current injection during input period
 
         ###### recording activity
-        s_mon = SpikeMonitor(neurons)  # keep track of population firing
+        s_mon = SpikeMonitor(neurons)  # keep track of population firing # todo don't need this except for plotting right? could make things more efficient maybe
         #P_patch = neurons[(self.N_e - 1):(self.N_e + 1)]  # random exc and inh cell #todo chose these randomly
         P_patch = neurons[0:2] # todo # go back to patching an inhibitory neuron too
         dt_patch = 0.1 * ms  # 1/sampling frequency  in ms
-        patch_monitor = StateMonitor(P_patch, variables=('vm', 'gE', 'gI', 'w', 'g_input'), record=True,
+        patch_monitor = StateMonitor(P_patch, variables=('vm', 'gE', 'gI', 'w', 'g_input'), record=True, # todo don't need this except for plotting right? could make things more efficient maybe
                                      dt=dt_patch)  # keep track of a few cells
 
 
@@ -534,4 +534,191 @@ class NetworkHelper:
             print "asynchrony score " + str(asynchrony_score)
 
         return score_components
+
+
+    def simulate_activity_for_decoding(self, params, target_file, verboseplot=False):
+
+
+
+        #N_repetitions = 3 # todo put this in the network config file (average over multiple runs to get a better estimate of these param vals)
+
+        p_ei = params[0]
+        p_ie = params[1]
+        p_ii = params[2]
+        w_input = params[3] * nS
+        p_inhi = params[4] # todo consider ordering these in a more logical way at some point
+        p_iinh = params[5]
+        ########### define the neurons and connections
+        logrand_mu = log(1) - 0.5*(self.logrand_sigma**2) # this establishes mean(W) = 1, regardless of sigma
+
+        # having trouble with the self stuff in passing string arguments to Brian2
+        #  so just pursue the course of least resistance - rename the variables NOTE is there a better way
+
+        initial_Vm = self.initial_Vm
+
+        C = self.C
+        gL = self.gL
+        taum = self.taum
+        EL = self.EL
+        VT = self.VT
+        DeltaT = self.DeltaT
+        Vcut = self.Vcut
+
+        tauw = self.tauw
+        a = self.a
+        b = self.b
+        Vr = self.Vr
+        EE = self.EE
+        EI = self.EI
+        taue = self.taue
+        taui = self.taui
+
+        #w_input = self.w_input
+        we = self.we
+        wi = self.wi
+
+        eqs = self.eqs  # dynamics of the model
+
+        g_input_timedArray = TimedArray(NetworkHelper.cell_inputs * w_input, dt=defaultclock.dt)  # w_input is in nS, giving these the correct units
+                        # todo would it work to subsample the input?
+        neurons = NeuronGroup(self.N,model=eqs, threshold='vm>Vcut', reset="vm=Vr; w+=b",
+                              refractory=1 * ms, method='rk4')
+
+        # Defining the subgroups i.e. (e_input e i)
+        P_input = neurons[:self.N_input] # the new input population (which is a subset of the exc population) # todo add N_inh
+        Pe = neurons[self.N_input:self.N_e]  # non-inh subset of the excitatory subpopulation
+                    # so, Pe has size (N_e - N_input) + 1
+        Pi = neurons[self.N_e:self.N] # inh neurons
+
+        # DEFINE THE SYNAPSE GROUPS
+        # exc -> exc
+        C_inp_inp = Synapses(P_input, P_input, model='''alpha : 1''', on_pre='gE+=(alpha*we)')   # treat all excitatory connections the same:
+        C_inp_e = Synapses(P_input, Pe, model='''alpha : 1''', on_pre='gE+=(alpha*we)')
+        C_e_inp = Synapses(Pe, P_input, model='''alpha : 1''', on_pre='gE+=(alpha*we)')
+        Cee = Synapses(Pe, Pe, model='''alpha : 1''', on_pre='gE+=(alpha*we)') # note: we will set alpha using the lognorm draws
+        # exc -> inh
+        C_inp_i = Synapses(P_input, Pi, model='''alpha : 1''', on_pre='gE+=(alpha*we)')
+        Cei = Synapses(Pe, Pi, model='''alpha : 1''', on_pre='gE+=(alpha*we)')
+        # inh -> exc
+        C_i_inp = Synapses(Pi, P_input, model='''alpha : 1''', on_pre='gI+=(alpha*wi)')
+        Cie = Synapses(Pi, Pe, model='''alpha : 1''', on_pre='gI+=(alpha*wi)')
+        # inh -> inh
+        Cii = Synapses(Pi, Pi, model='''alpha : 1''', on_pre='gI+=(alpha*wi)')
+
+        # DEFINE THE BINARY TOPOLOGY
+        # all exc connections
+        C_inp_inp.connect(p=self.p_connect_ee,condition='i!=j')   # no autapses      NOTE (additional argument we might want: condition='i!=j') # note - we can also specify vectors Pre and Post, so that Pre(i) -> Post(i) ... e.g. Cee.connect(i=Pre, j=Post)
+        C_inp_e.connect(p=self.p_connect_ee)
+        C_e_inp.connect(p=self.p_connect_ee)
+        Cee.connect(p=self.p_connect_ee,condition='i!=j') # no autapses
+
+                                                        #Cei.connect(p=self.p_connect_ei)  # artifact from when we weren't optimizing over these params
+                                                        #Cii.connect(p=self.p_connect_ii)
+                                                        #Cie.connect(p=self.p_connect_ie)
+        C_inp_i.connect(p=p_inhi)
+        Cei.connect(p=p_ei)
+
+        C_i_inp.connect(p=p_iinh)
+        Cie.connect(p=p_ie) # passed in as argument
+
+        Cii.connect(p=p_ii,condition='i!=j')
+
+        # GET THE SIZES OF THESE FOR THE LOGNORM DRAW
+        N_inp_inp = len(C_inp_inp)
+        N_inp_e = len(C_inp_e)
+        N_e_inp = len(C_e_inp)
+        N_ee = len(Cee)
+        N_inp_i = len(C_inp_i)
+        N_ei = len(Cei)
+        N_i_inp = len(C_i_inp)
+        N_ie = len(Cie)
+        N_ii = len(Cii)
+
+        # DEFINE THE DISTRIBUTION OF WEIGHTS
+        '''
+        # todo do this in a loop instead of one big draw, b/c it's a killer on memory -- todo run speed comparisons
+        print 'beginning assignment of weights...'
+        for i in range(self.N_input):
+            for j in range(self.N_input):
+                if C_inp_inp.w[i,j] > 0:
+                    C_inp_inp.alpha[i,j] = numpy.random.lognormal(self.logrand_mu, self.logrand_sigma,1) # inp -> inp
+            for j in range(self.N_e):
+                if C_inp_e.w[i,j] > 0:
+                    C_inp_e.alpha[i,j] = numpy.random.lognormal(self.logrand_mu, self.logrand_sigma,1) # inp -> e
+            for j in range(self.N_i):
+                if C_inp_i.w[i,j] > 0:
+                    C_inp_i.alpha[i,j] = numpy.random.lognormal(self.logrand_mu, self.logrand_sigma,1) # inp -> i
+        for i in range(self.N_e):
+            for j in range(self.N_input):
+                if C_e_inp.w[i,j] > 0:
+                    C_e_inp.w[i,j] = numpy.random.lognormal(self.logrand_mu, self.logrand_sigma,1) # e -> inp
+            for j in range(self.N_e):
+                if Cee.w[i, j] > 0:
+                    Cee.w[i,j] = numpy.random.lognormal(self.logrand_mu, self.logrand_sigma,1) # e -> e
+            for j in range(self.N_i):
+                if Cei.w[i, j] > 0:
+                    Cei.w[i,j] = numpy.random.lognormal(self.logrand_mu, self.logrand_sigma, 1)  # e -> i
+        for i in range(self.N_i):
+            for j in range(self.N_input):
+                if C_i_inp.w[i,j] > 0:
+                    C_i_inp.w[i,j] = numpy.random.lognormal(self.LOG_RAND_muInh, self.LOG_RAND_sigmaInh, 1)  # i -> inp
+            for j in range(self.N_e):
+                if Cie.w[i, j] > 0:
+                    Cie.w[i,j] = numpy.random.lognormal(self.LOG_RAND_muInh, self.LOG_RAND_sigmaInh, 1)  # i -> e
+            for j in range(self.N_i):
+                if Cii.w[i, j] > 0:
+                    Cii.w[i,j] = numpy.random.lognormal(self.LOG_RAND_muInh, self.LOG_RAND_sigmaInh, 1)  # i -> i
+        print 'beginning assignment of weights...'
+        '''
+        C_inp_inp.alpha = numpy.random.lognormal(self.logrand_mu, self.logrand_sigma, N_inp_inp)
+        C_inp_e.alpha = numpy.random.lognormal(self.logrand_mu, self.logrand_sigma, N_inp_e)
+        C_e_inp.alpha = numpy.random.lognormal(self.logrand_mu, self.logrand_sigma, N_e_inp)
+        Cee.alpha = numpy.random.lognormal(self.logrand_mu, self.logrand_sigma, N_ee)
+
+        C_inp_i.alpha = numpy.random.lognormal(self.logrand_mu, self.logrand_sigma, N_inp_i)
+        Cei.alpha = numpy.random.lognormal(self.logrand_mu, self.logrand_sigma, N_ei)
+
+        C_i_inp.alpha = numpy.random.lognormal(self.LOG_RAND_muInh, self.LOG_RAND_sigmaInh, N_i_inp)
+        Cie.alpha = numpy.random.lognormal(self.LOG_RAND_muInh, self.LOG_RAND_sigmaInh, N_ie)
+
+        Cii.alpha = numpy.random.lognormal(self.LOG_RAND_muInh, self.LOG_RAND_sigmaInh, N_ii)  # NOTE mean of these distributions = 1
+
+
+
+
+
+        ################# run the simulation ####################
+        ###### initialization
+        neurons.vm = self.initial_Vm
+        neurons.gE = 0 * nS
+        neurons.gI = 0 * nS
+        # neurons.I = input_current * nA # current injection during input period
+
+        ###### recording activity
+        s_mon = SpikeMonitor(neurons)  # keep track of population firing # todo don't need this except for plotting right? could make things more efficient maybe
+        #P_patch = neurons[(self.N_e - 1):(self.N_e + 1)]  # random exc and inh cell #todo chose these randomly
+        #P_patch = neurons[0:2] # todo # go back to patching an inhibitory neuron too
+        #dt_patch = 0.1 * ms  # 1/sampling frequency  in ms
+        #patch_monitor = StateMonitor(P_patch, variables=('vm', 'gE', 'gI', 'w', 'g_input'), record=True, # todo don't need this except for plotting right? could make things more efficient maybe
+        #                             dt=dt_patch)  # keep track of a few cells
+
+        #for i_rep in range(self.N_repetitions): # note this repetition thing broke and I haven't fixed it yet
+        run(self.duration)  # todo need to extend the timed array across N_repetitions
+        #if i_rep < (self.N_repetitions-1):
+        #neurons.vm = self.initial_Vm
+        #neurons.gE = 0 * nS
+        #neurons.gI = 0 * nS
+
+        ##### spiking activity
+        if verboseplot:
+            plt.figure
+            plt.plot(s_mon.t / ms, s_mon.i, '.k')
+            plt.xlabel('Time (ms)')
+            plt.ylabel('Neuron index')
+            plt.title('population spiking')
+            plt.show()
+
+        # write list of spike times to a file
+        spiketime_list = [s_mon.t / ms, s_mon.i]
+        np.save(target_file, spiketime_list)
 

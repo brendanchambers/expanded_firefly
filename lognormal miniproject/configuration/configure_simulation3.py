@@ -5,7 +5,7 @@ import json
 
 
 config_prefix = '2-28-2017 20x150 '  # for making the filestring - this should match the firefly config (todo make this automatic)
-target_dir = '../simulations/2-28-2017/'
+target_dir = '../simulations/3-2-2017/'
 
 ######## simulation parameters #############
 N_input = 400  # number of exc neurons getting input

@@ -9,11 +9,11 @@ from firefly_pack.plot_firefly_fun import plot_firefly_fun
 #networkconfig_filestring = 'firefly cleanup 12-6-2016 networkconfig.json'
 #config_filestring = 'firefly cleanup 12-6-2016 config.json'
 
-dir = 'simulations/2-27-2017/'
-config_filestring = dir + '2-27-2017 100x60  config.json'
-networkconfig_filestring = dir + '2-27-2017 40x90  networkconfig 1.json'
-inputcurrents_filestring = dir + '2-27-2017 inputs.json'
-results_filestring = dir + '2-27-2017 100x60  simulations 1.json'
+dir = 'simulations/2-28-2017/'
+config_filestring = dir + '2-28-2017 80x60  config.json'
+networkconfig_filestring = dir + '2-28-2017 20x150  networkconfig 1.json'
+inputcurrents_filestring = dir + '2-28-2017 inputs.json'
+results_filestring = dir + '2-28-2017 80x60  simulations 1.json'
 
 plot_firefly_fun(dir,config_filestring,
                  networkconfig_filestring,
